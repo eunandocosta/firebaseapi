@@ -1,0 +1,10 @@
+# docker-compose.yml
+
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "5004:5004"
+    volumes:
+      - ./credentials:/app/credentials
